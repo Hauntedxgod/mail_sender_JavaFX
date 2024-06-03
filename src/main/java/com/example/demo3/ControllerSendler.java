@@ -61,7 +61,6 @@ public class ControllerSendler {
         mailSendButton.setOnAction(e ->{
             if (kfMail.isSelected()){
                 list.add(kfMail.getText());
-
             }
             if (InfoMail.isSelected()){
                 list.add(InfoMail.getText());
@@ -78,7 +77,7 @@ public class ControllerSendler {
             Stage dialogStage = new Stage();
             dialogStage.initModality(Modality.WINDOW_MODAL);
 
-            VBox vbox = new VBox(new Text("СООБЩЕНИЕ ОТПРАВЛЕНО") , new Button("Ok"));
+            VBox vbox = new VBox(new Text("СООБЩЕНИЕ ОТПРАВЛЕНО") , new Button( "Ok"));
             vbox.setAlignment(Pos.CENTER);
             vbox.setPadding(new Insets(50));
 
